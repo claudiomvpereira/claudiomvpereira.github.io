@@ -58,3 +58,22 @@
     font-size: 10px;
   }
 }
+
+@media (max-width: 400px) {
+  .habilidades-container {
+    padding: 0;
+  }
+
+  .habilidade {
+    height: 80px;
+    width: 80px;
+  }
+
+  .habilidade img {
+    height: 38px;
+  }
+
+  .habilidade p {
+    font-size: 8px;
+  }
+}
