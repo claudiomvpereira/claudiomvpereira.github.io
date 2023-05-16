@@ -119,8 +119,8 @@
     display: flex;
   }
   .menu-mobile img {
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
   }
   .menu {
     display: none;
@@ -128,7 +128,7 @@
 
   .header-menu {
     display: flex;
-    background: #222222;
+    background: rgba(34, 34, 34, 0.7);
     right: -55px;
     top: 30vh;
     position: fixed;
