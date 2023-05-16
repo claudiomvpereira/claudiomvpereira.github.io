@@ -144,7 +144,21 @@ form button:hover {
     text-align: center;
   }
 
+  .contato-dados h2 {
+    font-size: 26px;
+  }
+
+  .contato-dados p {
+    font-size: 20px;
+  }
+
   .contato-redes {
     justify-content: center;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 340px;
   }
 }
