@@ -88,6 +88,14 @@
     justify-content: center;
   }
 
+  .main-conteudo h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-conteudo h2 {
+    font-size: 1.8rem;
+  }
+
   .main-img {
     display: none;
   }
