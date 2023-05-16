@@ -1,0 +1,33 @@
+export default function initCarousel() {
+  const controls = document.querySelectorAll(".control");
+  let currentCard = 1;
+  const cards = document.querySelectorAll(".projetos-card");
+  const maxCards = cards.length;
+
+  controls.forEach((control) => {
+    control.addEventListener("click", () => {
+      const isLeft = control.classList.contains("arrow-left");
+
+      if (isLeft) {
+        currentCard -= 1;
+      } else {
+        currentCard += 1;
+      }
+
+      if (currentCard >= maxCards) {
+        currentCard = 0;
+      }
+
+      if (currentCard < 0) {
+        currentCard = maxCards - 1;
+      }
+
+      cards.forEach((card) => {
+        card.classList.remove("current-card");
+      });
+
+      cards[currentCard].classList.add("current-card");
+      console.log(currentCard);
+    });
+  });
+}

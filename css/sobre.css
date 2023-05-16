@@ -1,0 +1,101 @@
+.sobre-container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titulo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: -40px;
+}
+
+.section-name {
+  font-family: "Orbitron", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.hexa-left,
+.hexa-right {
+  filter: drop-shadow(0px 0px 2px #00ffff);
+}
+
+.sobre-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-top: 30px;
+}
+
+.foto {
+  display: block;
+  height: 240px;
+  width: 180px;
+  background-color: #222222;
+  filter: drop-shadow(0px 0px 4px #00ffff);
+}
+
+.botao-container {
+  margin-top: 20px;
+}
+
+.botao-curriculo {
+  width: 180px;
+  height: 42px;
+  background-color: #0b0b0b;
+  color: #ffffff;
+  font-family: "Sofia Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #222222;
+  background-color: #222222;
+  border-radius: 4px;
+  gap: 20px;
+  transition: 0.3s;
+}
+
+.botao-curriculo:hover {
+  border: solid 1px #00ffff;
+  filter: drop-shadow(0px 0px 4px #00ffff);
+  background-color: #0b0b0b;
+}
+
+.sobre-conteudo {
+  color: #ffffff;
+  font-family: "Sofia Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 800px) {
+  .sobre-conteudo {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sobre-container {
+    display: grid;
+  }
+
+  .foto {
+    display: none;
+  }
+
+  .botao-container {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+  }
+}

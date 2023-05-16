@@ -1,0 +1,94 @@
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+}
+
+.main-conteudo h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 3.125rem;
+  font-weight: 400;
+  color: #ffffff;
+  width: 100%;
+}
+
+.main-conteudo h2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2.125rem;
+  font-weight: 400;
+  color: #00ffff;
+  text-shadow: 0px 0px 10px #00ffff;
+  grid-column: 1;
+}
+
+.main-conteudo h2 span {
+  animation: blinker 0.8s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.buttons span {
+  height: 50px;
+  width: 50px;
+}
+
+.buttons img {
+  padding: 10px;
+  background: #222222;
+  border: solid 1px #222222;
+  margin-top: 20px;
+  margin-right: 10px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.buttons img:hover {
+  border: solid 1px #00ffff;
+  filter: drop-shadow(0px 0px 4px #00ffff);
+  background-color: #0b0b0b;
+}
+
+.main-img {
+  height: 413px;
+  width: 350px;
+  background: url(/assets/logo-xl-escuro.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.main-img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1100px) {
+  .main-container {
+    max-width: 850px;
+    justify-content: center;
+  }
+
+  .main-conteudo h1,
+  h2,
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-img {
+    display: none;
+  }
+}
