@@ -1,8 +1,6 @@
 #habilidades {
   margin-top: 20px;
   padding: 80px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .habilidades-container {
@@ -42,11 +40,21 @@
 
 @media (max-width: 800px) {
   .habilidades-container {
-    gap: 0;
+    gap: 20px;
     padding: 10px;
   }
 
   .habilidade {
-    transform: scale(0.7);
+    height: 85px;
+    width: 85px;
+  }
+
+  .habilidade img {
+    height: 40px;
+  }
+
+  .habilidade p {
+    margin-top: 5px;
+    font-size: 10px;
   }
 }

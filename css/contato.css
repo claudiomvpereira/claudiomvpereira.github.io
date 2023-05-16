@@ -1,7 +1,5 @@
 #contato {
   margin-top: 80px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .contato-container {
@@ -9,6 +7,8 @@
   grid-template-columns: 1fr 1fr;
   max-width: 900px;
   margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
   gap: 120px;
 }
 
@@ -160,5 +160,16 @@ form button:hover {
   form input[type="email"],
   form textarea {
     width: 320px;
+  }
+}
+
+@media (max-width: 400px) {
+  .contato-redes a {
+    height: 40px;
+    width: 40px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .contato-redes img {
+    padding: 8px;
   }
 }

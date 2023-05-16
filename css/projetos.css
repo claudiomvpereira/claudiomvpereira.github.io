@@ -1,13 +1,13 @@
 #projetos {
   padding: 100px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .projetos-container {
   position: relative;
   margin-top: 60px;
   max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cards {
@@ -24,6 +24,7 @@
   border: none;
   cursor: pointer;
   flex-shrink: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .projetos-card {
@@ -194,5 +195,47 @@
 
   .card-buttons button {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .arrow-left,
+  .arrow-right {
+    padding: 5px;
+  }
+
+  .projetos-card {
+    height: 330px;
+    width: 260px;
+  }
+
+  .card-img {
+    height: 120px;
+  }
+
+  .projetos-card h3 {
+    font-size: 16px;
+  }
+
+  .card-habilidades {
+    margin-top: 10px;
+  }
+
+  .card-habilidades ul {
+    gap: 5px;
+    font-size: 8px;
+  }
+
+  .projetos-card p {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .card-buttons {
+    margin-top: 20px;
+  }
+
+  .card-buttons button {
+    font-size: 12px;
   }
 }

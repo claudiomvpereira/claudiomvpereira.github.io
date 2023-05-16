@@ -80,6 +80,7 @@
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .linha {
@@ -158,5 +159,11 @@
 
   .linha {
     display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-container {
+    max-width: 300px;
   }
 }
