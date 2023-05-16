@@ -126,7 +126,7 @@
   }
 
   .header-menu {
-    display: flex;
+    display: none;
     background: #222222;
     right: -55px;
     top: 30vh;
