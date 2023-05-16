@@ -1,13 +1,13 @@
 #projetos {
   padding: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .projetos-container {
   position: relative;
   margin-top: 60px;
   max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .cards {
