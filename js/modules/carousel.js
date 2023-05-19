@@ -1,6 +1,6 @@
 export default function initCarousel() {
   const controls = document.querySelectorAll(".control");
-  let currentCard = 1;
+  let currentCard = 0;
   const cards = document.querySelectorAll(".projetos-card");
   const maxCards = cards.length;
 
