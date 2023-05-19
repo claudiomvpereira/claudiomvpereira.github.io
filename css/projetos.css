@@ -59,22 +59,13 @@
   margin-right: 20px;
   height: 181px;
   background-color: #000000;
-  border: solid 2px #5c5c5c;
-  border-radius: 4px;
+  border: solid 4px #5c5c5c;
   overflow: hidden;
   transition: 0.3s;
 }
 
 .card-img:hover {
-  border: solid 2px #ffffff;
-}
-
-.card-img img {
-  transition: 0.3s;
-}
-
-.card-img img:hover {
-  transform: scale(1.2);
+  border: solid 4px #ffffff;
 }
 
 .projetos-card h3 {
