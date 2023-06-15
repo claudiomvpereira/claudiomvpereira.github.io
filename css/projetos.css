@@ -214,7 +214,7 @@
     padding: 5px;
   }
 
-  .card {
+  .card.current-card {
     height: 330px;
     width: 260px;
   }
