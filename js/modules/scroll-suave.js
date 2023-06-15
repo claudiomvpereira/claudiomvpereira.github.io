@@ -1,18 +1,20 @@
 export default function initScrollSuave() {
-  const linksInternos = document.querySelectorAll(
-    '[data-menu="suave"] a[href^="#"]'
-  );
-  function scrollToSection(event) {
-    event.preventDefault();
-    const href = event.currentTarget.getAttribute("href");
-    const section = document.querySelector(href);
-    section.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var menuHeight = document.querySelector(".header-bg").offsetHeight;
+    var menuLinks = document.querySelectorAll(".header-menu a");
 
-  linksInternos.forEach((link) => {
-    link.addEventListener("click", scrollToSection);
+    menuLinks.forEach(function (link) {
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        var target = document.querySelector(this.getAttribute("href"));
+        var targetOffset = target.offsetTop - menuHeight;
+
+        window.scrollTo({
+          top: targetOffset,
+          behavior: "smooth",
+        });
+      });
+    });
   });
 }
