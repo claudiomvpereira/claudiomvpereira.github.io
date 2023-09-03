@@ -277,7 +277,12 @@
 
 @media (max-width: 520px) {
   .projetos-thumb-container {
-    gap: 5px;
+    gap: 2px;
+  }
+
+  .projetos-thumb {
+    width: 80px;
+    height: 40px;
   }
 
   .card-buttons button {
