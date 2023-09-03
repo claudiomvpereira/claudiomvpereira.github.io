@@ -280,13 +280,35 @@
     gap: 2px;
   }
 
+  .previous,
+  .next {
+    padding: 8px;
+  }
+
+  .card-imagem {
+    margin-top: -20px;
+    width: 180px;
+  }
+
+  .card-habilidades ul {
+    gap: 2px;
+    font-size: 8px;
+  }
+
   .projetos-thumb {
     width: 80px;
     height: 40px;
   }
 
+  .card-info p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    font-size: 14px;
+  }
+
   .card-buttons button {
-    font-size: 12px;
-    width: 100px;
+    font-size: 10px;
+    width: 80px;
   }
 }
