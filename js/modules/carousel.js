@@ -1,33 +1,41 @@
 export default function initCarousel() {
-  const controls = document.querySelectorAll(".control");
-  let currentCard = 0;
-  const cards = document.querySelectorAll(".card");
-  const maxCards = cards.length;
+  document.addEventListener("DOMContentLoaded", function () {
+    const thumbs = document.querySelectorAll(".projetos-thumb");
+    const cards = document.querySelectorAll(".projeto-card");
+    const prevButton = document.querySelector(".previous");
+    const nextButton = document.querySelector(".next");
 
-  controls.forEach((control) => {
-    control.addEventListener("click", () => {
-      const isLeft = control.classList.contains("arrow-left");
+    let currentCardIndex = 0;
 
-      if (isLeft) {
-        currentCard -= 1;
-      } else {
-        currentCard += 1;
-      }
-
-      if (currentCard >= maxCards) {
-        currentCard = 0;
-      }
-
-      if (currentCard < 0) {
-        currentCard = maxCards - 1;
-      }
-
+    function showCard(cardIndex) {
       cards.forEach((card) => {
         card.classList.remove("current-card");
       });
+      cards[cardIndex].classList.add("current-card");
 
-      cards[currentCard].classList.add("current-card");
-      console.log(currentCard);
+      thumbs.forEach((thumb) => {
+        thumb.classList.remove("current-card");
+      });
+      thumbs[cardIndex].classList.add("current-card");
+    }
+
+    thumbs.forEach((thumb, index) => {
+      thumb.addEventListener("click", () => {
+        currentCardIndex = index;
+        showCard(currentCardIndex);
+      });
     });
+
+    prevButton.addEventListener("click", () => {
+      currentCardIndex = (currentCardIndex - 1 + cards.length) % cards.length;
+      showCard(currentCardIndex);
+    });
+
+    nextButton.addEventListener("click", () => {
+      currentCardIndex = (currentCardIndex + 1) % cards.length;
+      showCard(currentCardIndex);
+    });
+
+    showCard(currentCardIndex);
   });
 }

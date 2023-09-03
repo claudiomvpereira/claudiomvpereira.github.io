@@ -53,6 +53,10 @@
       </div>
       <div class="main-img"></div>
     </div>
+    <div class="mouse-container">
+      <div class="mouse"></div>
+      <div class="scroll"></div>
+    </div>
   </main>
 
   <section id="sobre" class="section-bg">
@@ -67,7 +71,7 @@
       <div class="sobre-conteudo">
         <p>Trabalhei durante muitos anos com comércio físico e digital, passando por diversas experiências, como vendas, compras e gerência.<br><br>
 
-          Sempre fui apaixonado por tecnologia e, ao trabalhar com e-commerce, desenvolvi um interesse pela área de desenvolvimento.<br><br>
+          Sempre fui apaixonado por tecnologia e, ao trabalhar com e-commerce, vi despertar em mim o interesse pela área de desenvolvimento.<br><br>
 
           Atualmente, estou em transição de carreira e me dedicando aos estudos para me tornar, eventualmente, um desenvolvedor full stack.</p>
       </div>
@@ -91,18 +95,35 @@
       <img class="hexa-right" src="/assets/detalhes/hexa-direita.svg" alt="">
     </div>
 
+    <div class="projetos-thumb-container">
+      <div class="projetos-thumb current-card">
+        <img src="/assets/logo-xl-escuro.png" alt="">
+      </div>
+
+      <div class="projetos-thumb">
+        <img src="/assets/fotos/pokedex-thumb.png" alt="">
+      </div>
+
+      <div class="projetos-thumb">
+        <img src="/assets/fotos/bikcraft-thumb-2.png" alt="">
+      </div>
+
+      <div class="projetos-thumb">
+        <img src="/assets/fotos/animais-fantasticos-thumb.png" alt="">
+      </div>
+    </div>
 
     <div class="projetos-container">
-      <div class="carousel">
-        <button class="arrow-left control"><img src="/assets/detalhes/seta-esquerda.svg" alt=""></button>
+      <button class="previous control"><img src="/assets/detalhes/seta-esquerda.svg" alt=""></button>
 
-        <div class="card current-card">
-          <div class="card-img">
-            <a href="https://claudiomvpereira.github.io/">
-              <img src="/assets/fotos/portfolio-thumb.png" alt="">
-            </a>
-          </div>
-          <h3 class>Portfolio 1.0</h3>
+      <div class="projeto-card current-card">
+        <div class="card-imagem">
+          <a href="https://claudiomvpereira.github.io/" target="_blank">
+            <img src="/assets/fotos/portfolio-thumb.png" alt="">
+          </a>
+        </div>
+        <div class="card-info">
+          <h2>Portfolio 1.0</h2>
           <div class="card-habilidades">
             <ul>
               <li><span>HTML</span></li>
@@ -117,15 +138,16 @@
             <button><a href="https://github.com/claudiomvpereira/claudiomvpereira.github.io" target="_blank">Repositório</a></button>
           </div>
         </div>
+      </div>
 
-
-        <div class="card">
-          <div class="card-img">
-            <a href="https://animaisfantasticos-cmvp.vercel.app/">
-              <img src="/assets/fotos/animais-fantasticos-thumb.png" alt="">
-            </a>
-          </div>
-          <h3 class>Animais Fantásticos</h3>
+      <div class="projeto-card">
+        <div class="card-imagem">
+          <a href="https://pokedex-cmvp.vercel.app/" target="_blank">
+            <img src="/assets/fotos/pokedex-thumb-2.png" alt="">
+          </a>
+        </div>
+        <div class="card-info">
+          <h2>PokéDex 1.0</h2>
           <div class="card-habilidades">
             <ul>
               <li><span>HTML</span></li>
@@ -133,38 +155,62 @@
               <li><span>JavaScript</span></li>
             </ul>
           </div>
-          <p>Projeto desenvolvido para testar diferentes conceitos de JavaScript.</p>
+          <p>Projeto pessoal em construção. Desenvolvido para praticar através do consumo de uma API REST de Pokémon.</p>
           <div class="card-buttons">
-            <button><a href="https://animaisfantasticos-cmvp.vercel.app/" target="_blank">Projeto</a></button>
-            <button><a href="https://github.com/claudiomvpereira/animaisfantasticos" target="_blank">Repositório</a></button>
+            <button><a href="https://pokedex-cmvp.vercel.app/" target="_blank">Projeto</a></button>
+            <button><a href="https://github.com/claudiomvpereira/pokedex" target="_blank">Repositório</a></button>
           </div>
         </div>
+      </div>
 
-
-        <div class="card">
-          <div class="card-img">
-            <a href="https://bikcraft-cmvp.vercel.app/">
-              <img src="/assets/fotos/bikcraft-thumb.png" alt="">
-            </a>
-          </div>
-          <h3 class>Bikcraft</h3>
+      <div class="projeto-card">
+        <div class="card-imagem">
+          <a href="https://bikcraft-cmvp.vercel.app/" target="_blank">
+            <img src="/assets/fotos/bikcraft-thumb.png" alt="">
+          </a>
+        </div>
+        <div class="card-info">
+          <h2>Bikcraft</h2>
           <div class="card-habilidades">
             <ul>
               <li><span>HTML</span></li>
               <li><span>CSS</span></li>
               <li><span>JavaScript</span></li>
+              <li><span>Figma</span></li>
             </ul>
           </div>
-          <p>Projeto desenvolvido para testar conceitos de HTML e CSS</p>
+          <p>Projeto desenvolvido com foco em testes de conceitos de HTML e CSS.</p>
           <div class="card-buttons">
             <button><a href="https://bikcraft-cmvp.vercel.app/" target="_blank">Projeto</a></button>
             <button><a href="https://github.com/claudiomvpereira/bikcraft" target="_blank">Repositório</a></button>
           </div>
         </div>
-
-        <button class="arrow-right control"><img src="/assets/detalhes/seta-direita.svg" alt=""></button>
       </div>
-    </div>
+
+      <div class="projeto-card">
+        <div class="card-imagem">
+          <a href="https://animaisfantasticos-cmvp.vercel.app/" target="_blank">
+            <img src="/assets/fotos/animais-fantasticos-thumb-2.png" alt="">
+          </a>
+        </div>
+        <div class="card-info">
+          <h2>Animais Fantásticos</h2>
+          <div class="card-habilidades">
+            <ul>
+              <li><span>HTML</span></li>
+              <li><span>CSS</span></li>
+              <li><span>JavaScript</span></li>
+            </ul>
+          </div>
+          <p>Projeto desenvolvido com foco em testes de conceitos de JavaScript.</p>
+          <div class="card-buttons">
+            <button><a href="https://animaisfantasticos-cmvp.vercel.app/" target="_blank">Projeto</a></button>
+            <button><a href="https://github.com/claudiomvpereira/animaisfantasticos" target="_blank">Repositório</a></button>
+          </div>
+        </div>
+      </div>
+
+      <button class="next control"><img src="/assets/detalhes/seta-direita.svg" alt=""></button>
     </div>
   </section>
 
